@@ -1,0 +1,28 @@
+{
+    "name": "strapi-plugin-multi-input",
+    "description": "A strapi custom field for a multi input.",
+    "keywords": [
+        "strapi",
+        "strapi-plugin",
+        "custom-fields",
+        "multi-input"
+    ],
+    "version": "1.1.0",
+    "strapi": {
+        "name": "multi-input",
+        "description": "A strapi custom field for a multi input.",
+        "kind": "plugin",
+        "displayName": "Multi-Input"
+    },
+    "license": "MIT",
+    "peerDependencies": {
+        "@strapi/strapi": "^4.10.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dillendev/strapi-plugin-multi-input.git"
+    },
+    "dependencies": {
+        "react-tag-input-component": "^2.0.2"
+    }
+}

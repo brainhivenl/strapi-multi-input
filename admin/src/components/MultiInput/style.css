@@ -1,0 +1,19 @@
+.rti--container {
+    --rti-tag: #c0c0cf;
+    --rti-bg: rgb(33, 33, 52);
+    --rti-border: rgb(74, 74, 106);
+}
+
+span.rti--tag {
+    color: #222;
+    font-size: .9rem;
+    padding-right: 0;
+    padding-top: .2rem;
+    padding-left: .5rem;
+    padding-bottom: .2rem;
+}
+
+input.rti--input {
+    color: #fff;
+    background-color: transparent;
+}
