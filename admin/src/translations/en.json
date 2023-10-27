@@ -2,5 +2,9 @@
   "multi-input.label": "Multi Input",
   "multi-input.description": "Select multiple options from a list",
   "multi-input.enum.label": "Options (one per line)",
-  "multi-input.enum.description": "Enter one option per line. You can also add a value and a label separated by a colon (e.g. \"label:value\").\nIf no value is provided, the label will be used as the value."
+  "multi-input.enum.description": "Enter one option per line. You can also add a value and a label separated by a colon (e.g. \"label:value\").\nIf no value is provided, the label will be used as the value.",
+  "multi-input.form.suggestEndpoint.label": "Suggestion HTTP endpoint",
+  "multi-input.form.suggestEndpoint.description": "The endpoint must return a JSON array of strings.",
+  "multi-input.form.suggestAuthenticated.label": "Suggestion endpoint requires authentication",
+  "multi-input.form.suggestAuthenticated.description": "If checked, the suggestion endpoint will be called with the current user's credentials."
 }

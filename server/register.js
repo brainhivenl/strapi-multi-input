@@ -5,6 +5,6 @@ module.exports = ({ strapi }) => {
     strapi.customFields.register({
         name: 'multi-input',
         plugin,
-        type: 'json',
+        type: 'json'
     });
 };

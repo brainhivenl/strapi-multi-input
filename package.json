@@ -16,13 +16,14 @@
     },
     "license": "MIT",
     "peerDependencies": {
-        "@strapi/strapi": "^4.10.1"
+        "@strapi/strapi": "^4.14.4"
     },
     "repository": {
         "type": "git",
         "url": "https://github.com/dillendev/strapi-plugin-multi-input.git"
     },
     "dependencies": {
-        "react-tag-input-component": "^2.0.2"
+        "lodash": "^4.17.21",
+        "react-tag-autocomplete": "^7.1.0"
     }
 }

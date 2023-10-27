@@ -27,22 +27,29 @@ export default {
             sectionTitle: null,
             items: [
               {
-                name: 'options',
-                type: 'textarea-enum',
+                name: "options.suggestEndpoint",
+                type: "string",
                 intlLabel: {
-                  id: getTrad('multi-input.enum.label'),
-                  defaultMessage: 'Options (one per line)',
+                  id: 'multi-input.form.suggestEndpoint.label',
+                  defaultMessage: 'Suggestion HTTP endpoint'
                 },
                 description: {
-                  id: getTrad('multi-input.enum.description'),
-                  defaultMessage:
-                    'Enter one option per line. You can also add a value and a label separated by a colon (e.g. "label:value").\nIf no value is provided, the label will be used as the value.',
-                },
-                placeholder: {
-                  id: getTrad('multi-input.enum.placeholder'),
-                  defaultMessage: 'Ex:\nOption 1\nOption 2\nOption 3:option-3',
+                  id: 'multi-input.form.suggestEndpoint.description',
+                  defaultMessage: 'The endpoint must return a JSON array of strings.'
                 },
               },
+              {
+                name: "options.suggestAuthenticated",
+                type: "checkbox",
+                intlLabel: {
+                  id: 'multi-input.form.suggestAuthenticated.label',
+                  defaultMessage: 'Suggestion endpoint requires authentication'
+                },
+                description: {
+                  id: 'multi-input.form.suggestAuthenticated.description',
+                  defaultMessage: 'If checked, the suggestion endpoint will be called with the current user\'s credentials.'
+                },
+              }
             ],
           },
         ],
