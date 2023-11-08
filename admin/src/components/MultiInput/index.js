@@ -30,8 +30,9 @@ const MultiInput = ({
       parsedValue = JSON.parse(value || '[]')
     } catch (e) { }
 
-    return (parsedValue || []).map(tag => ({ label: tag, value: tag }))
+    return (parsedValue || [])
   }, [value])
+  const selected = sanitizedValue.map(tag => ({ label: tag, value: tag }))
 
   function change(tag) {
     if (!options.suggestEndpoint) {
@@ -111,7 +112,7 @@ const MultiInput = ({
           allowNew={true}
           allowBackspace={true}
           delimiterKeys={['Enter', ',']}
-          selected={sanitizedValue}
+          selected={selected}
           suggestions={suggestions}
         />
         <FieldHint />
