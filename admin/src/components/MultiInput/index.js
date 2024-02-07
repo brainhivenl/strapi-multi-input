@@ -76,7 +76,7 @@ const MultiInput = ({
       const headers = {}
 
       if (options.suggestAuthenticated) {
-        const token = JSON.parse(sessionStorage.getItem('jwtToken'))
+        const token = JSON.parse(localStorage.getItem('jwtToken'))
         headers['Authorization'] = `Bearer ${token}`
       }
 
